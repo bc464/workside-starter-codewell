@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+  <title>Workside</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+<!-- NAVBAR -->
+    <nav class="navbar flex">
+      <a href="index.html" class="link-logo"><img src="Assets/Workside Logo.svg" alt="Workside-logo" class="workside-logo"></a>
+      <div class="navbar-links flex">
+        <a href="#" class="link">Find a job</a>
+        <a href="#" class="link">Submit a job</a>
+        <a href="#" class="link">Sponsor us</a>
+      </div>
+      <div class="profile flex">
+        <img src="Assets/Avatar.svg" alt="avatar" class="avatar">
+        <p>Olivia Benjamin</p>
+        <img src="Assets/Down Arrow.svg" alt="down arrow" class="down-arrow">
+      </div>
+      <button class="btn-mobile-nav">
+          <img src="Assets/Menu.svg" alt="hamburger-icon" class="icon-mobile-nav" id="menu-outline">
+          <img src="Assets/Close.svg" alt="close-icon" class="icon-mobile-nav" id="close-outline">
+      </button>
+       </nav>
+  </header>
+  <main>
+    <div class="filters-dropdown flex">
+      <div class="filters-desc flex">
+      <span>Filters</span>
+      <img src="Assets/Down Arrow.svg" alt="down arrow" class="down-arrow-filters">
+    </div>
+    </div>
+<!-- MAIN-CONTAINER -->
+    <section class="main-container flex">
+
+<!-- FILTERS -->
+      <section class="filters flex">
+        <div class="location">
+          <h3>Location</h3>
+          <input type="checkbox" class="input-location">Remote<br>
+          <input type="checkbox" class="input-location">United States<br>
+          <input type="checkbox" class="input-location">India<br>
+          <input type="checkbox" class="input-location">Australia<br>
+          <input type="checkbox" class="input-location">Poland<br>
+          <input type="checkbox" class="input-location">Canada<br>
+        </div>
+        <div class="location">
+          <h3>Payment</h3>
+          <input type="checkbox" class="input-location">Verified<br>
+          <input type="checkbox" class="input-location">Unverified<br>
+        </div>
+        <div class="location">
+          <h3>Level</h3>
+          <input type="checkbox" class="input-location">Entry<br>
+          <input type="checkbox" class="input-location">Intermediate<br>
+          <input type="checkbox" class="input-location">Expert<br>
+        </div>
+      </section>
+<!-- JOB-LIST -->
+      <section class="job-list flex">
+  <!-- JOB-BOX-ONE -->
+       <div class="job-box">
+        <div class="job-info flex">
+          <img src="Assets/First Job Logo.svg" alt="first-job-logo" class="job-logo">
+          <div class="job-title flex">
+            <a href="#" class="job-link job-link-first">Looking for a freelance frontend developer</a>
+            <div class="location-info flex">
+              <img src="Assets/Location.svg" alt="location-icon" class="location-img">
+              <p>Virginia United States</p>
+            </div>
+          </div>
+        </div>
+          <div class="job-btns flex">
+            <div class="btn-links flex">
+              <button class="btn">Frontend</button>
+              <button class="btn">Webdev</button>
+            </div>
+            <div class="payment flex">
+              <img src="Assets/Checkmark Verified.svg" alt="checkmark-verified" class="checkmark-verified-img">
+              <p>Payment Verified</p>
+            </div>
+          </div>
+        </div>
+  <!-- JOB-BOX-TWO -->
+        <div class="job-box">
+        <div class="job-info flex">
+          <img src="Assets/Second Job Logo.svg" alt="second-job-logo" class="job-logo">
+          <div class="job-title flex">
+            <a href="#" class="job-link">Product Designer needed</a>
+            <div class="location-info flex">
+              <img src="Assets/Location.svg" alt="location-icon" class="location-img">
+              <p>Remote</p>
+            </div>
+          </div>
+        </div>
+          <div class="job-btns flex">
+            <div class="btn-links flex">
+              <button class="btn">Design</button>
+              <button class="btn">Research</button>
+            </div>
+            <div class="payment flex">
+              <img src="Assets/Checkmark Not Verified.svg" alt="checkmark-verified" class="checkmark-verified-img">
+              <p>Payment Unverified</p>
+            </div>
+          </div>
+        </div>
+  <!-- JOB-BOX-THREE -->    
+      <div class="job-box">
+        <div class="job-info flex">
+          <img src="Assets/Third Job Logo.svg" alt="third-job-logo" class="job-logo">
+          <div class="job-title flex">
+            <a href="#" class="job-link">SEO Specialist for an e-commerce shop</a>
+            <div class="location-info flex">
+              <img src="Assets/Location.svg" alt="location-icon" class="location-img">
+              <p>New York, United States</p>
+            </div>
+          </div>
+        </div>
+          <div class="job-btns flex">
+            <div class="btn-links flex">
+              <button class="btn">SEO</button>
+              
+            </div>
+            <div class="payment flex">
+              <img src="Assets/Checkmark Not Verified.svg" alt="checkmark-not-verified" class="checkmark-not-verified-img">
+              <p>Payment Unverified</p>
+            </div>
+          </div>
+        </div>
+  <!-- JOB-BOX-FOUR -->
+        <div class="job-box">
+        <div class="job-info flex">
+          <img src="Assets/Fourth Job Logo.svg" alt="fourth-job-logo" class="job-logo">
+          <div class="job-title flex">
+            <a href="#" class="job-link">Migrate our website from Sketch to Figma</a>
+            <div class="location-info flex">
+              <img src="Assets/Location.svg" alt="location-icon" class="location-img">
+              <p>Mumbia, India</p>
+            </div>
+          </div>
+        </div>
+          <div class="job-btns flex">
+            <div class="btn-links flex">
+              <button class="btn">Designer</button>
+              
+            </div>
+            <div class="payment flex">
+              <img src="Assets/Checkmark Verified.svg" alt="checkmark-verified" class="checkmark-verified-img">
+              <p>Payment Verified</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="job-information">
+        <div class="job-information-box flex">
+          <div class="job-information-title flex">
+            <div class="title flex">
+              <h2>Frontend Developer</h2>
+              <p>Virgina, United States</p>
+            </div>
+            <p class="posted">Posted 4 days ago</p>
+          </div>
+          <div class="job-breakdown flex">
+            <div class="experience flex">
+              <h3>Experience</h3>
+              <p>Expert</p>
+            </div>
+            <div class="job-location flex">
+              <h3>Location</h3>
+              <p>Virgina, United States</p>
+            </div>
+            <div class="salary flex">
+              <h3>Salary Range</h3>
+              <p>$100-S120/hr</p>
+            </div>
+          </div>
+          <div class="company-overview">
+            <h3>Company Overview</h3>
+            <p>Dividstar was established in 1932 by Matthew Cohens in Virginia, United States. Dividstar has been the leader application for personal finance over the past 10 decades and aim to continue holding that position. As times continue to evolve, we do too.</p>
+          </div>
+          <div class="requirements">
+            <h3>Job Requirements</h3>
+            <div class="requirements-details flex">
+              
+                <img src="Assets/Checkmark Verified.svg" alt="checkmark-verified" class="checkmark-verified-img">
+                <p>4 years of professional working experience</p>
+              </div>
+              <div class="requirements-details flex">
+              
+                <img src="Assets/Checkmark Verified.svg" alt="checkmark-verified" class="checkmark-verified-img">
+                <p>Understanding of Next.js, React and Angular</p>
+              </div>
+              <div class="requirements-details flex">
+              
+                <img src="Assets/Checkmark Verified.svg" alt="checkmark-verified" class="checkmark-verified-img">
+                <p>Knowledge of REACT tools including React.js, Webpack, Enzyme, Redux, and Flux.</p>
+              </div>
+            </div>
+            <div class="apply-button">
+              <button class="btn btn-apply">Apply to job</button>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
